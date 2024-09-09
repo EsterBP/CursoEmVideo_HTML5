@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-color: azure;
+    color:black;
+}
+p {
+    text-align: justify;
+    justify-content: 50px;
+}

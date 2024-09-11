@@ -29,7 +29,7 @@ header#cabecalho img#icone {
 }
 
 header#cabecalho {
-    border-bottom: 1px #606060 solid;
+    border-bottom: 1px #dddd solid;
     height: 150px;
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
@@ -44,9 +44,7 @@ header#cabecalho h1 {
 }
 
 header#cabecalho h2 {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: Arial , sans-serif;
     font-size: 15pt;
     color: #8888;
     padding: 0;
@@ -119,4 +117,64 @@ nav#menu a {
 
 nav#menu a:hover {
     color:whitesmoke;
+}
+
+section#corpo {
+    display: block;
+    width: 520px;
+    float:left;
+    border-right: 1px solid #dddd;
+    padding-right: 15px;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.cl {
+    color: white;
+    background-color: #cecece;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cr {
+    background-color: seashell;
+}
+table#tabelaspec caption {
+    color: #8888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color:black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #dddd;
+}
+
+footer#rodape p {
+    text-align: center;
 }

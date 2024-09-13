@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste JavaScript 2</title>
+    <title>Teste Javascript</title>
     <script>
-        var quebrada=false;
-        function mudaLampada(tipo) {
-            if (tipo=1) 
+        var quebrada = false;
+        function mudaLampada(tipo) 
+        {
+            if (tipo == 1) 
             {
                 arquivo = "_imagens/lampada-acesa.jpg";
             }
-            if (tipo=2) 
+            if (tipo == 2) 
             {
                 arquivo = "_imagens/lampada-apagada.jpg";
             }
-            if (tipo=3) 
+            if (tipo == 3) 
             {
                 arquivo = "_imagens/lampada-quebrada.jpg";
-                quebrada = true;
             }
             if (!quebrada)
             {
                 document.getElementById("luz").src = arquivo;
+                if (tipo == 3) 
+                {
+                    quebrada = true;
+                }
             }
         }
     </script>
 </head>
 <body>
-    <h1>Acenda a lampada</h1>
-    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="" onclick=""/>
+    <h1>Acenda a Lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)"/>
 </body>
 </html>
